@@ -1,6 +1,8 @@
 body{
     color: #666666;
     font-family: Verdana, Arial, sans-serif;
+    background-image: linear-gradient(to bottom, #eeeeee, #ffffff);
+    background-attachment: fixed
 }
 
 
