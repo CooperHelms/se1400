@@ -1,0 +1,145 @@
+* {
+    font-family: "Winky Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#wrapper {
+    display: grid;
+    grid-template-columns: 
+    minmax(0px, 1fr) 
+    repeat(6, minmax(0, 175px)) 
+    minmax(0px, 1fr);
+}
+
+#header {
+    grid-column: 1 / -1;
+    background: #fcfcf2;
+    height: 200px;
+    display: flex;
+    flex-flow: row nowrap;
+    list-style-type: none;
+    justify-content: space-around;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+#header div {
+    font-size: 600%;
+    justify-content: space-around;
+}
+
+#logo {
+    width: 200px;
+}
+
+#instagram {
+    width: 80px;
+}
+
+#facebook {
+    width: 80px;
+}
+
+#nav {
+    height: 60px;
+    font-weight: bold; 
+    background-color: #e8e6e6;
+    padding:0;
+    padding-top: 5px;
+    margin:0;
+    text-decoration: none;
+    grid-row: 2 / 3;
+    grid-column: 1 / -1;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    list-style-type: none;
+    justify-content: space-around;
+    font-size: 32px;
+}
+
+#content1 {
+    grid-column: 1 / -1;
+    background: #bdd7d9;
+    height: 550px;
+    font-size: 200%;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 5%;
+    display:flex;  
+}
+
+#content1 div {
+    margin: 10px;
+    padding: 10px;
+    font-size: 32px;
+}
+
+#pups {
+    width: 600px;
+    padding-top: 0%;
+    padding-left: 0%;
+    padding-bottom: 0%;
+}
+
+#content2 {
+    grid-column: 1 / -1;
+    background: #bdd9c4;
+    height: 550px;
+    font-size: 200%;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 5%;
+    display:flex;  
+}
+
+#content2 div {
+    margin: 10px;
+    padding: 10px;
+    font-size: 32px;
+}
+
+#pup {
+    width: 350px;
+    padding-top: 0%;
+    padding-left: 0%;
+    padding-bottom: 0%;
+}
+
+#footer {
+    grid-column: 1 / -1;
+    background: #fcfcf2;
+    height: 300px;
+    display: flex;
+    flex-flow: row nowrap;
+    list-style-type: none;
+    justify-content: center;
+    text-align: center;
+    padding-top: 3%;
+    line-height: 2.5;
+}
+
+#footlogo {
+    width: 250px;
+}
+
+#follow {
+    font-size: 200%;
+}
+
+#contact {
+    font-size: 170%;
+}
