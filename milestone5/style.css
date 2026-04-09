@@ -25,6 +25,10 @@
     padding-bottom: 3%;
 }
 
+#title {
+    padding-top: 35px;
+}
+
 #header div {
     font-size: 600%;
     justify-content: space-around;
@@ -36,6 +40,7 @@
 
 #instagram, #facebook {
     width: 80px;
+    padding-top: 70px;
 }
 
 
@@ -154,7 +159,7 @@ nav ul {
     }
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1175px) {
     #header div {
         font-size: 350%;
     }
@@ -163,8 +168,13 @@ nav ul {
         width: 100px;
     }
 
+    #title {
+        padding-top: 0px;
+    }
+
     #instagram, #facebook {
-    width: 70px;
+        width: 70px;
+        padding-top: 0px;
     }
 
     nav ul {
@@ -178,7 +188,7 @@ nav ul {
     }
 
     #content2 div {
-    font-size: 24px;
+        font-size: 24px;
     }
 
     #pups {
@@ -198,7 +208,7 @@ nav ul {
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
     #header div {
         font-size: 200%;
     }
@@ -206,9 +216,14 @@ nav ul {
     #logo {
         width: 60px;
     }
+
+    #title {
+        padding-top: 0px;
+    }
     
     #instagram, #facebook {
         width: 40px;
+        padding-top: 0px;
     }
 
     #nav {
@@ -263,5 +278,16 @@ nav ul {
 
     #contact {
     font-size: 100%;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    #header div {
+        font-size: 150%;
+    }
+
+    #instagram, #facebook {
+        width: 30px;
+        padding-top: 0px;
     }
 }
