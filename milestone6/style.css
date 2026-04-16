@@ -4,6 +4,11 @@
     font-weight: 400;
     font-style: normal;
 }
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
 
 #wrapper {
     display: grid;
@@ -172,6 +177,93 @@ input, textarea {
 input:focus, textarea:focus {
     outline: none;
     background-color: #e8e6e6;
+}
+
+#apply {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #bdd7d9;
+    height: 500px;
+    grid-column: 1 / -1;
+}
+
+#apply-link {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 300%;
+    color: #ffffff;
+    background-color: #c4431f;
+    border: none;
+    text-decoration: none;
+    transition: background-color 0.4s ease, color 0.4s ease;
+    border-radius: 999px; 
+    height: auto;
+    width: auto;
+}
+
+#apply-link:hover {
+    background-color: #e8e6e6;
+    color: #c4431f;
+}
+
+#no-puppies {
+    display: flex; /*flex = show, none = no show*/
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #bdd7d9;
+    height: 500px;
+    grid-column: 1 / -1;
+    font-size: 25px;
+}
+
+#puppies { /* Add more puppies as needed */
+      /* paste style="display: none;" in the div tag to hide puppies that are not available */
+    display: none; /*flex = show, none = no show*/
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #bdd7d9;
+    height: auto;
+    text-align: center;
+    font-size:25px;
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+}
+
+#available-pup {
+    width: 300px;
+    padding: 10px;
+    padding-top: 30px;
+}
+
+#our-dogs {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #bdd7d9;
+    height: 500px;
+    width: 100%;
+    text-align: center;
+    font-size:25px;
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+}
+
+#gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #bdd7d9;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    font-size:25px;
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
 }
 
 @media only screen and (max-width: 1100px) {
