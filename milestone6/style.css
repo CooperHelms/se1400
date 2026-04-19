@@ -101,7 +101,7 @@ nav ul {
 }
 
 #pups {
-    width: 600px;
+    width: 350px;
     padding-top: 0%;
     padding-left: 0%;
     padding-bottom: 0%;
@@ -123,7 +123,7 @@ nav ul {
     font-size: 32px;
 }
 
-#pup {
+#fam {
     width: 350px;
     padding-top: 0%;
     padding-left: 0%;
@@ -136,7 +136,6 @@ nav ul {
     height: auto;
     display: flex;
     flex-flow: row nowrap;
-    list-style-type: none;
     justify-content: center;
     text-align: center;
     padding-top: 3%;
@@ -150,33 +149,12 @@ nav ul {
 }
 
 #follow {
-    font-size: 200%;
+    font-size: 30px;
 }
 
 #contact {
-    font-size: 170%;
-}
-
-form {
-    display:grid;
-    grid-template-rows: auto;
-    grid-template-columns: 200px 1fr;
-    gap: 0.75rem;
-    width: 100%;
-    font-size: 200%;
-}
-
-input, textarea {
-    font-size: 1rem;
-    padding: 10px;
-    color: #000000;
-    background-color: #766767;
-    border: none;
-}
-
-input:focus, textarea:focus {
-    outline: none;
-    background-color: #e8e6e6;
+    font-size: 30px;
+    padding-left: 10%;
 }
 
 #apply {
@@ -208,7 +186,7 @@ input:focus, textarea:focus {
 }
 
 #no-puppies {
-    display: flex; /*flex = show, none = no show*/
+    display: none; /*flex = show, none = no show*/
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -220,7 +198,7 @@ input:focus, textarea:focus {
 
 #puppies { /* Add more puppies as needed */
       /* paste style="display: none;" in the div tag to hide puppies that are not available */
-    display: none; /*flex = show, none = no show*/
+    display: flex; /*flex = show, none = no show*/
     justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
@@ -241,15 +219,45 @@ input:focus, textarea:focus {
 #our-dogs {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-start;
     background-color: #bdd7d9;
-    height: 500px;
+    height: auto;
     width: 100%;
     text-align: center;
-    font-size:25px;
+    font-size:30px;
     grid-column: 1 / -1;
     grid-row: 3 / 4;
+}
+
+#our-dogs > div {
+  display: inline-block;
+  width: 350px;
+  text-align: center;
+  padding-top: 50px;
+}
+
+#our-dogs img {
+    display: block;
+    max-width: 100%;
+}
+
+#bio {
+    font-size: 22px;
+    padding: 10px;
+}
+
+#indy {
+    width: 340px;
+    height: auto;
+    padding: 10px;
+    padding-top: 30px;
+}
+
+#max {
+    width: 350px;
+    height: auto;
+    padding: 10px;
+    padding-top: 30px;
 }
 
 #gallery {
@@ -264,6 +272,13 @@ input:focus, textarea:focus {
     font-size:25px;
     grid-column: 1 / -1;
     grid-row: 3 / 4;
+}
+
+#gallery1 {
+    width: 300px;
+    height: auto;
+    padding: 10px;
+    padding-top: 30px;
 }
 
 @media only screen and (max-width: 1100px) {
@@ -298,7 +313,7 @@ input:focus, textarea:focus {
 
     #content1 div {
         height: auto;
-        font-size: 20px;
+        font-size: 24px;
         padding: 0px;
     }
 
@@ -315,11 +330,20 @@ input:focus, textarea:focus {
     }
 
     #follow {
-    font-size: 150%;
+    font-size: 20px;
     }
 
     #contact {
-    font-size: 150%;
+    font-size: 20px;
+    }
+
+    #no-puppies {
+        font-size: 20px;
+        height: 400px;
+    }
+
+    #apply-link {
+        font-size: 250%;
     }
 }
 
@@ -367,7 +391,7 @@ input:focus, textarea:focus {
     }
 
     #pups {
-        width: 200px;
+        width: 150px;
     }
 
     #content2 {
@@ -379,20 +403,51 @@ input:focus, textarea:focus {
         font-size: 15px;
     }
 
-    #pup {
+    #fam {
         width: 150px;
     }
 
     #footlogo {
-    width: 100px;
+        width: 100px;
     }
 
     #follow {
-    font-size: 100%;
+        font-size: 100%;
     }
 
     #contact {
-    font-size: 100%;
+        font-size: 100%;
+    }
+
+    #available-pup {
+    width: 200px;
+    padding: 8px;
+    padding-top: 20px;
+    }
+
+    #bio {
+        font-size: 15px;
+    }
+
+    #indy, #max {
+        width: 150px;
+        padding-left: 25%;
+    }   
+
+    #no-puppies {
+        font-size: 15px;
+        height: 300px;
+    }
+
+    #apply-link {
+        font-size: 200%;
+    }
+
+    #gallery1 {
+    width: 200px;
+    height: auto;
+    padding: 10px;
+    padding-top: 20px;
     }
 }
 
@@ -401,8 +456,78 @@ input:focus, textarea:focus {
         font-size: 150%;
     }
 
+    #logo {
+    width: 40px;
+    }
+
     #instagram, #facebook {
         width: 30px;
         padding-top: 0px;
+    }
+
+    #footlogo {
+        width: 75px;
+    }
+
+    #contact {
+        font-size: 12px;
+    }
+
+    #follow {
+        font-size: 12px;
+    }
+
+    #available-pup {
+    width: 150px;
+    padding: 5px;
+    padding-top: 10px;
+    }
+
+    #our-dogs {
+    flex-direction: column; 
+    align-items: center;
+    }
+
+    #our-dogs > div {
+    width: 90%; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding-top: 20px;
+    }
+
+    #our-dogs img {
+    width: 80%; 
+    height: auto;
+    padding-left: 10px;
+    }
+
+    #indy,
+    #max {
+    width: 100%;
+    }
+
+    #bio {
+    font-size: 18px; 
+    }
+
+    #no-puppies {
+        font-size: 13px;
+        height: 250px;
+    }
+
+    #apply {
+        height: 300px;
+    }
+
+    #apply-link {
+        font-size: 150%;
+    }
+
+    #gallery1 {
+    width: 150px;
+    height: auto;
+    padding: 10px;
+    padding-top: 20px;
     }
 }
